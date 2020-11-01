@@ -8,6 +8,6 @@ RUN apk add build-base bash
 
 COPY . .
 
-RUN python3 -m install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 CMD ["bash","start.sh"]
