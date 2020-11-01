@@ -1,10 +1,10 @@
-FROM amd64/python:3.9.0-alpine
+FROM amd64/python:3.9.0
 
 WORKDIR /app
 
-RUN apk update
+RUN apt -qq update
 
-RUN apk add build-base bash python3-tkinter
+RUN apt -qq install -y build-essential bash py3-tkinter
 
 COPY . .
 
