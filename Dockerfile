@@ -4,10 +4,10 @@ WORKDIR /app
 
 RUN apk update
 
-RUN apk add build-base 
+RUN apk add build-base bash
 
 COPY . .
 
 RUN pip install -r requirements.txt
 
-CMD ["python","instagram-dl.py"]
+CMD ["bash","start.sh"]
