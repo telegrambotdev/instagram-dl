@@ -4,7 +4,7 @@ WORKDIR /app
 
 RUN apk update
 
-RUN apk add build-base bash
+RUN apk add build-base bash python3-tk
 
 COPY . .
 
